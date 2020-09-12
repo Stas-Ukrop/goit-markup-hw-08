@@ -1,0 +1,116 @@
+.main-marg{
+    margin-bottom: 94px;
+}
+.ul-wrap{
+    flex-wrap: wrap;
+}
+.ul-wrap img{
+    display: block;
+}
+.ul-wrap h3{
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 4px;
+    margin-left: 24px;
+    padding-bottom: 0px;
+    color: #212121;
+}
+.ul-wrap p{
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1,875;
+    letter-spacing: 0.03em;
+    color:$secondary-color;
+
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 24px;
+    padding-bottom: 20px;
+}
+.ul-wrap-color{
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box; 
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);   
+}
+.overley p {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    top:63px;
+    left:24px;
+  }
+
+  .div-overley{
+    position: relative;    
+    overflow: hidden;
+    display: block;    
+  }
+  .gal{
+    box-sizing: border-box;
+    width: 100%;
+
+}
+.ul-wrap-color:hover .overley {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  .overley {
+    background-color: RGB(33, 150, 243, 0.8);
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width:480px) and (max-width:767px){
+    .ul-wrap-color{
+        width: 450px;
+    }
+    .gal{
+        width: 450px;
+    }
+    .ul-wrap-color:not(:last-child){
+        margin-bottom: 30px;
+    }
+    .ul-wrap{
+        display: flex;
+        justify-content: center;;
+    }
+}
+@media screen and (min-width:767px) and (max-width:1199px){
+    .gal{
+        width: 354px;
+    }
+    .ul-wrap-color:not(:last-child){
+        margin-bottom: 30px;
+    }
+    .ul-wrap li:not(:nth-child(2n)){
+        margin-right: 26px;
+    }
+}
+@media screen and (min-width:1200px){
+    .ul-wrap-color:not(:nth-child(3n)){
+        margin-right: 30px;
+    }
+    .ul-wrap-color{
+        width: 370px;
+    }
+    .ul-wrap-color:nth-child(n-3){
+        margin-bottom: 30px;
+    }
+}

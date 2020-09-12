@@ -1,0 +1,89 @@
+.icon li:not(:last-child){
+    margin-right: 10px;
+}
+.flexbox{
+    padding-left: 0px;
+    margin-top:0px;
+    margin-bottom: 0px;
+}
+.svg-items{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 44px;
+    height: 44px;
+    fill: #afb1b8;
+    background-color:white;
+    border-radius: 50%;
+}
+.a-conteiner:hover .svg-items,
+.a-conteiner:focus .svg-items{
+    fill: white;
+    background-color: $hover-color;
+}
+.svg-items-color{
+    fill: white;
+    background-color:rgba(255, 255, 255, 0.1);
+}
+.footer-form{
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+}
+.primary-button{
+    display: inline-flex;
+    width: 200px;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    text-align: center;
+    
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    color: $primary-white-color;
+    background-color:$hover-color;    
+}
+.send-sms::after{    
+    content: '';
+    display: inline-flex;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    background-image: url('../img/send.svg');
+    background-size: contain;
+} 
+.primary-button{
+    display: inline-flex;
+    width: 200px;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    text-align: center;
+    
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    color: $primary-white-color;
+    background-color: $hover-color; 
+    margin-top:20px;
+    margin-bottom: 60px;   
+}
+@media screen and (min-width:480px) and (max-width:767px){
+    .icon li:not(:last-child){
+        margin-right: 10px;
+    }
+    .fot-cont{
+        padding-bottom: 60px;
+    }
+    .flexbox-footer{
+        justify-content: center;
+    }
+}

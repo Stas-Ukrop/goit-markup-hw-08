@@ -1,0 +1,156 @@
+.title-hid{
+    display: none;
+}
+.skills-title{
+    font-weight: bold;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $main-color;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:30px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 16px; 
+}
+.skills>p{
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: $secondary-color;        
+}
+.box-conteiner{
+    background-color: #F5F4FA;
+    border-radius: 4px;    
+    min-height: 120px;
+}
+@media screen and (min-width:480px) and (max-width:767px){
+    .conteiner{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .flexbox{
+        padding-left: 0px;
+        margin-top:0px;
+        margin-bottom: 0px;
+    }
+    .box-conteiner{
+        display: flex;
+        align-items: center;
+        justify-content: center;       
+    }
+     .box-item svg{
+        display: block;
+    }
+    .skills-conteiner{
+        margin-top: 60px;
+    }
+    .skills-title{             
+        margin-top:30px;
+        margin-bottom: 10px;
+    }
+    
+    .skills:not(:last-child){
+        margin-bottom:30px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1199px){
+    .flexbox{
+        display: flex;    
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+        flex-wrap: wrap;
+    }
+    .box-conteiner{
+        display: flex;
+        align-items: center;
+        justify-content: center;   
+        
+    }    
+    
+    .box-item svg{
+        display: block;
+    }
+    .skills{
+        margin-left: 0px;
+        width: 354px;
+    }
+    .skill-flex{
+        padding-top: 60px;
+    }
+    .skills:not(:nth-child(2n)){
+        margin-right:30px;
+    }
+    .skills-conteiner{
+        margin-bottom: 60px;
+    }
+}
+@media screen and (min-width:1200px){
+    .flexbox{
+        display: flex;    
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    }
+    .skills-conteiner{
+        margin-top: 94px;
+    }
+    .title-hid{
+        display: none;
+        margin: 0px;
+        padding: 0px;
+    }
+    .skills{
+        width: 270px;
+    }
+    .skills:not(:last-child){
+        margin-right: 30px;
+    }
+    .skills-title{
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $main-color;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .skills>img{
+        margin-bottom: 30px;
+    }
+    .skills>h3{
+        margin-top:30px;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+    .skills>p{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .skills-title>p{
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        color: $secondary-color;
+    }
+    .box-conteiner{
+        background-color: #F5F4FA;
+        border-radius: 4px;
+        min-height: 120px;
+        width: 270px;
+    }
+    .box-item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 25px 100px;
+        
+    }
+     .box-item svg{
+        display: block;
+    }
+}

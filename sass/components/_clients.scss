@@ -1,0 +1,58 @@
+.icons{
+    padding-bottom: 94px;
+}
+.client{
+    display:flex;
+    height: 90px;
+    align-items: center;
+    justify-content: center;
+    fill: #afb1b8;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    fill: #afb1b8;
+}
+.client:hover,
+.client:focus{
+    fill:$hover-color;
+    border: 1px solid $hover-color;
+}
+@media screen and (min-width:480px) and (max-width:767px){
+    .icons{
+        padding-bottom: 30px;
+    }
+    .sec-two{
+        margin-top:0px;
+    }
+    .client{
+        width: 210px;
+        flex-wrap: wrap;
+    }
+    .icons>li:nth-child(2n){
+        margin-left: 30px;    
+    }
+    .icons>li:nth-child(-n+6){
+        margin-bottom: 30px;    
+    }
+}
+@media screen and (min-width:768px) and (max-width:1199px){
+    .icons li:not(:nth-child(3n)){
+    margin-right: 30px;    
+    }
+    .client{
+        width: 226px;
+        margin-top:30px;
+    }
+    .icons{
+        padding-bottom: 60px;
+    }
+}
+@media screen and (min-width:1200px){
+    .client{
+        width: 170px;
+        height: 90px;
+    }
+    .icons li:not(:last-child){
+        margin-right: 30px;    
+        }
+
+}

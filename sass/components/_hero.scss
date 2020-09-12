@@ -1,0 +1,106 @@
+.hero{    
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/ImgHeaderMobil.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;    
+    
+    @media screen and (min-width: 480px){
+        z-index: 1;
+        .conteiner{
+            height: 400px;
+        }
+        h1{
+            font-family: "Roboto",sans-serif;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 26px;
+            line-height: 42px;
+            text-align: center;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+
+            color: $primary-white-color;
+            margin-bottom: 30px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            justify-content: center;
+            padding-bottom:30px ;
+        }
+        
+        .main-div{
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            align-items: center;
+            flex-direction: column;
+            padding-top: 118px;
+        }
+        .primary-button{
+            display: inline-flex;
+            width: 200px;
+            border-radius: 4px;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            text-align: center;
+            
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 1.875;
+            letter-spacing: 0.06em;
+            color: $primary-white-color;
+            background-color: $hover-color;    
+        }
+    }
+    @media screen and(min-width:768px){
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/ImgHeaderTabl.jpg);
+        .conteiner{
+            height: 400px;
+        }
+    }
+    @media screen and(min-width:1200px){
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img.jpg);
+        .conteiner{
+            height: 600px;
+        }
+        h1{
+            font-family: "Roboto",sans-serif;
+            font-weight: 900;
+            font-size: 44px;
+            line-height: 60px;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: $primary-white-color;
+            margin-bottom: 30px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            justify-content: center;
+        }
+        .main-div{
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            align-items: center;
+            flex-direction: column;
+            padding-top: 200px;
+        }
+        .primary-button{
+            display: inline-flex;
+            width: 200px;
+            border-radius: 4px;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            text-align: center;
+            
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 1.875;
+            letter-spacing: 0.06em;
+            color: $primary-white-color;
+            background-color: $hover-color;    
+        }
+    }
+}

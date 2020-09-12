@@ -1,0 +1,46 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+body{
+    font-family: "Roboto",sans-serif;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $secondary-color;
+    margin: 0;
+}
+.conteiner{
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    // outline: 1px solid tomato;
+
+    @media screen and (min-width: 480px){
+        width: 450px;
+    }
+    @media screen and (min-width: 768px){
+        width: 768px;
+    }
+    @media screen and (min-width: 1200px){
+        width: 1230px;
+    }
+}
+li{
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    padding-inline-start: 0px;
+}
