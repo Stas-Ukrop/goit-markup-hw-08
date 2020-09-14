@@ -122,7 +122,9 @@
         text-transform: uppercase;
      }
     .footer-input{
-        width: 100%;
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 90%;
     }
     .footer-h2{
         margin-bottom: 20px;
@@ -187,5 +189,8 @@
     .primary-button{
         margin-top:0px;
     margin-bottom: 0px;
+    }
+    .flexbox{
+        padding-left: 15px;
     }
 }

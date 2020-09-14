@@ -87,9 +87,9 @@ body {
   margin-right: auto;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .conteiner {
-    width: 450px;
+    max-width: 767px;
   }
 }
 
@@ -122,6 +122,10 @@ ul {
 
 .backgrd-color {
   border-bottom: 1px solid #ECECEC;
+}
+
+.svgnav-item {
+  vertical-align: middle;
 }
 
 .title-logo {
@@ -181,10 +185,12 @@ ul {
     margin-left: auto;
     margin-top: 16px;
     margin-bottom: 16px;
+    margin-right: 15px;
   }
   .conteiner .conteiner-logo {
     margin-top: auto;
     margin-bottom: auto;
+    margin-left: 15px;
   }
   .conteiner .conteiner-bottom:focus .icon-menu,
   .conteiner .conteiner-bottom:hover .icon-menu {
@@ -349,6 +355,7 @@ ul {
   }
   .conteiner .selected {
     color: #2196F3;
+    padding-bottom: 9px;
   }
 }
 
@@ -360,6 +367,8 @@ ul {
   }
   .conteiner .logo-height {
     height: 80px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .conteiner .selected {
     padding-bottom: 15px;
@@ -387,7 +396,7 @@ ul {
   .conteiner .nav-maimmenu {
     padding-bottom: 25px;
     padding-top: 32px;
-    margin-right: 300px;
+    margin-right: 330px;
   }
   .conteiner .nav-mainitem {
     padding-bottom: 23px;
@@ -409,6 +418,7 @@ ul {
     padding-left: 0px;
     margin-left: 0px;
     margin-right: auto;
+    margin-right: 0px;
   }
   .conteiner .nav-adresscontainer li:last-child {
     padding-top: 0px;
@@ -614,8 +624,8 @@ ul {
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .conteiner {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .flexbox {
     padding-left: 0px;
@@ -645,6 +655,9 @@ ul {
   }
   .skills:not(:last-child) {
     margin-bottom: 30px;
+  }
+  .skills {
+    width: 450px;
   }
 }
 
@@ -1096,6 +1109,11 @@ ul {
   .icons > li:nth-child(-n+6) {
     margin-bottom: 30px;
   }
+  .icon-block {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1296,7 +1314,9 @@ ul {
     text-transform: uppercase;
   }
   .footer-input {
-    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 90%;
   }
   .footer-h2 {
     margin-bottom: 20px;
@@ -1370,6 +1390,9 @@ ul {
     margin-top: 0px;
     margin-bottom: 0px;
   }
+  .flexbox {
+    padding-left: 15px;
+  }
 }
 
 .backdrop {
@@ -1392,10 +1415,8 @@ ul {
   left: 50%;
   margin-left: auto;
   margin-right: auto;
-  padding: 40px 40px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 528px;
   height: 620px;
   background-color: #FFFFFF;
   z-index: 3;
@@ -1562,7 +1583,6 @@ ul {
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .modal {
-    width: 450px;
     height: 609px;
   }
   .close-button {
